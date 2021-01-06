@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_event_top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Event"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:id="@+id/edt_event_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/edt_event_desc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:hint="Description"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+    <EditText
+        android:id="@+id/edt_event_loc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:hint="Location"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Event Date"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btn_event_pick_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12-01-2020"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="fill"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btn_event_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_gravity="start"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btn_event_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            />
+    </LinearLayout>
+
+</LinearLayout>
